@@ -2,7 +2,7 @@
 REPORTE TÉCNICO
 
 Sistema de Detección de Objetos con ESP32-CAM y Edge Impulse
-Integrantes: Lizeth — Evelyn
+Integrantes: Lizeth , Evelyn , Juan
 Clases del modelo: Muñeco y Juguete
 Display: OLED
 Indicadores: LED verde, LED rojo, buzzer
@@ -612,8 +612,6 @@ El sistema funciona de manera estable durante ciclos prolongados.
 
 
 
----
-
 6. Conclusiones
 
 Conclusión de Lizeth
@@ -624,8 +622,6 @@ Conclusión de Evelyn
 
 Trabajar con visión artificial en la ESP32-CAM permitió comprender la importancia del procesamiento eficiente y el manejo adecuado de memoria. El uso de un display OLED, LEDs y sonido facilitó la interacción con el usuario, logrando un prototipo funcional y extensible a futuras aplicaciones.
 
-
----
 
 7. Trabajos Futuros
 
