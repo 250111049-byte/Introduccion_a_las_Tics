@@ -1,2 +1,2 @@
 INTRODUCCION A LAS TICS
-En este veremos como trabajar com la Esp32 y trabajaremos en la deteccion de objetos
+EN ESTE APARTADO TRABAJAREMOS CON LA CAMARA ESP32 EL CUAL CON ESTA VAMOS A SER LA DETENCCION DE OBJETOS
