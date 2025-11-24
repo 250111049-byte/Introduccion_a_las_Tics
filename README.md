@@ -9,32 +9,6 @@ Indicadores: LED verde, LED rojo, buzzer
 Carcasa: Impresa en 3D
 
 
-
-
-
-> El código fue integrado en el proyecto sin modificaciones y corresponde al firmware real utilizado en el prototipo final.
-
-
-
-
----
-
-5. Resultados
-
-El modelo reconoce correctamente muñeco y juguete.
-
-La detección se muestra en el display OLED sin retraso.
-
-El LED verde se activa con detecciones válidas.
-
-El LED rojo permanece encendido cuando no se detecta ningún objeto.
-
-El buzzer genera un aviso audible en detecciones.
-
-El sistema funciona de manera estable durante ciclos prolongados.
-
-
-
 6. Conclusiones
 
 Conclusión de Lizeth
