@@ -8,34 +8,6 @@ Display: OLED
 Indicadores: LED verde, LED rojo, buzzer
 Carcasa: Impresa en 3D
 
-3. Materiales
-
-ESP32-CAM
-
-Módulo FTDI
-
-Display OLED I2C
-
-LED verde
-
-LED rojo
-
-Buzzer
-
-Resistencias
-
-Protoboard y cables Dupont
-
-Carcasa 3D
-
-Plataforma Edge Impulse
-
-Arduino IDE
-
-
-
----
-
 4. Desarrollo del Proyecto
 
 4.1 Entrenamiento del modelo en Edge Impulse
