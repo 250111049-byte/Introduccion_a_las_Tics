@@ -1,0 +1,133 @@
+4. Desarrollo del Proyecto
+
+4.1 Entrenamiento del modelo en Edge Impulse
+
+El modelo fue entrenado en Edge Impulse con dos clases:
+
+Muñeco
+
+Juguete
+
+
+El entrenamiento generó un modelo TinyML optimizado para microcontroladores, permitiendo realizar clasificación con baja latencia y buena precisión dentro de la ESP32-CAM.
+
+
+---
+
+4.2 Funcionamiento general del sistema
+
+1. La ESP32-CAM captura imágenes en tiempo real.
+
+
+2. El modelo generador por Edge Impulse clasifica el objeto detectado.
+
+
+3. El display OLED muestra la etiqueta correspondiente.
+
+
+4. En caso de detección:
+
+El LED verde se enciende.
+
+El buzzer puede emitir sonido según el evento.
+
+
+
+5. Si no hay detección:
+
+El LED rojo permanece encendido.
+
+El display muestra “No detecto”.
+
+
+
+
+El sistema opera en tiempo real sin retrasos visibles y mantiene estabilidad durante ciclos continuos de inferencia.
+
+
+---
+
+4.3 Integración física
+
+Se imprimió una carcasa 3D que incluye:
+
+Abertura frontal para la cámara
+
+Ventana para el display OLED
+
+Espacio interno para LEDs, buzzer y cableado
+
+Alojamiento exacto para la ESP32-CAM
+
+
+
+---
+
+4.4 Explicación del Código Utilizado
+
+A continuación se explica detalladamente el código empleado en el proyecto, el cual fue el firmware final cargado en la ESP32-CAM.
+
+Inicialización de librerías y modelo
+
+El programa incluye la librería del modelo generado por Edge Impulse:
+
+#include <hotcar_inferencing.h>
+
+También se integran las librerías para manejo de la cámara, procesamiento de imagen y el display OLED.
+
+Configuración de la cámara
+
+Se define el modelo AI Thinker y su asignación de pines, permitiendo inicializar la cámara OV2640 de la ESP32-CAM con resolución QVGA y formato JPEG.
+
+Pantalla OLED e I2C
+
+Se configura un bus I2C por software usando:
+
+SDA → GPIO 15
+
+SCL → GPIO 14
+
+
+Y se inicializa un display OLED 128x64.
+
+LED de detección
+
+Se asigna el pin GPIO 4 para el LED verde que enciende cuando se detecta un objeto.
+
+Captura y conversión de imagen
+
+La función ei_camera_capture():
+
+Captura el frame
+
+Convierte la imagen JPEG en RGB888
+
+Redimensiona la imagen al tamaño requerido por el modelo
+
+
+Inferencia (clasificación)
+
+En la función loop():
+
+1. Se captura un frame
+
+
+2. Se ejecuta run_classifier()
+
+
+3. Se obtienen las probabilidades de cada clase
+
+
+4. Se activa un LED o se muestra texto según el resultado
+
+
+
+Salida en pantalla
+
+El OLED muestra:
+
+La clase detectada
+
+El porcentaje de confianza
+
+En caso de no detección: “No detecto”
