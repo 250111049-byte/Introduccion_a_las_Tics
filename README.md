@@ -8,25 +8,6 @@ Display: OLED
 Indicadores: LED verde, LED rojo, buzzer
 Carcasa: Impresa en 3D
 
-
----
-
-1. Introducción
-
-El presente proyecto implementa un sistema de visión artificial utilizando una ESP32-CAM y un modelo de inteligencia artificial entrenado en Edge Impulse para reconocer dos objetos específicos: muñeco y juguete.
-El sistema integra un display OLED, indicadores LED y un buzzer que permiten al usuario visualizar y escuchar el resultado de la detección en tiempo real.
-Todo el hardware se montó dentro de una carcasa impresa en 3D diseñada para alojar de forma ordenada los componentes del prototipo.
-
-
----
-
-2. Objetivo General
-
-Desarrollar un sistema embebido funcional basado en IA capaz de identificar objetos en tiempo real mediante una ESP32-CAM, mostrando los resultados en un display OLED y utilizando señales visuales y auditivas para indicar la detección.
-
-
----
-
 3. Materiales
 
 ESP32-CAM
