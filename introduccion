@@ -1,0 +1,2 @@
+El presente proyecto implementa un sistema de visión artificial utilizando una ESP32-CAM y un modelo de inteligencia artificial entrenado en Edge Impulse para reconocer dos objetos específicos: muñeco y juguete. El sistema integra una pantalla OLED, indicadores LED y un timbre que permiten al usuario visualizar y escuchar el resultado de la detección en tiempo real. Todo el hardware se montó dentro de una carcasa impresa en 3D diseñada para alojar de forma ordenada los componentes del prototipo.
+
