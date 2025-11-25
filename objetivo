@@ -1,4 +1,7 @@
 2. Objetivo General
 
-Desarrollar un sistema embebido funcional basado en IA capaz de identificar objetos en tiempo real mediante una ESP32-CAM,
+Desarrollar un sistema embebido funcional basado en IA capaz de identificar objetos en tiempo real mediante una ESP32-CAM, 
 mostrando los resultados en un display OLED y utilizando señales visuales y auditivas para indicar la detección.
+
+Este objetivo busca integrar de manera eficiente hardware y software para crear un prototipo autónomo que procese imágenes directamente desde el 
+dispositivo sin necesidad de equipos externos. 
