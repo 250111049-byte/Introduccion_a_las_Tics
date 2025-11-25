@@ -1,0 +1,11 @@
+6. Conclusiones
+
+Conclusión de Lizeth
+
+Este proyecto permitió integrar hardware y software en un sistema embebido real. Se adquirió experiencia en entrenamiento de modelos con Edge Impulse y 
+en la ejecución de IA en dispositivos de bajo consumo. La integración física en la carcasa 3D dio orden y mejoró la presentación final del prototipo.
+
+Conclusión de Evelyn
+
+Trabajar con visión artificial en la ESP32-CAM permitió comprender la importancia del procesamiento eficiente y el manejo adecuado de memoria. 
+El uso de un display OLED, LEDs y sonido facilitó la interacción con el usuario, logrando un prototipo funcional y extensible a futuras aplicaciones.
