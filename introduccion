@@ -3,3 +3,9 @@
 El presente proyecto implementa un sistema de visión artificial utilizando una ESP32-CAM y un modelo de inteligencia artificial entrenado en Edge Impulse para reconocer dos objetos específicos: muñeco y juguete.
 El sistema integra un display OLED, indicadores LED y un buzzer que permiten al usuario visualizar y escuchar el resultado de la detección en tiempo real.
 Todo el hardware se montó dentro de una carcasa impresa en 3D diseñada para alojar de forma ordenada los componentes del prototipo.
+
+Además, este proyecto busca demostrar cómo los sistemas embebidos y el aprendizaje automático pueden aplicarse de manera práctica en dispositivos de bajo costo, 
+permitiendo realizar tareas de clasificación de objetos de manera eficiente y autónoma. La combinación de sensores, actuadores y procesamiento en tiempo real 
+convierte este prototipo en una herramienta útil para aplicaciones educativas, demostrativas y de automatización básica. Asimismo, el diseño modular facilita 
+futuras mejoras, como el reconocimiento de más objetos, la integración de nuevas alertas visuales o sonoras, o la optimización del modelo de IA para escenarios 
+más complejos. Este trabajo refleja la importancia del uso de tecnologías emergentes y su implementación en soluciones accesibles y funcionales.
